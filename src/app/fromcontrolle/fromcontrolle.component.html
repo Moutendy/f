@@ -1,0 +1,15 @@
+<form class="form-inline" [formGroup]="personneForm">
+  <div class="form-group">
+    <label for="nom">Nom:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" name="nom" placeholder="Nom" id="nom" formControlName="nom"  required>
+  </div>
+  <div class="form-group">
+    <label for="prenom">Prenom:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="prenom" id="prenom" name="prenom" formControlName="prenom" required>
+  </div>
+  <div>
+  </div>
+  <button (click)="affiche()" class="btn btn-primary">Ajouter</button>
+</form>
+
+

@@ -1,0 +1,10 @@
+
+<form class="form-inline" [formGroup]="personneForms" (ngSubmit)="isAuthenticated()">
+  <label for="email">Email address:</label>
+  <input type="email" class="form-control" placeholder="Enter email" id="email" formControlName="email" [(ngModel)]="email"><br/>
+
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" placeholder="Enter password" id="pwd" formControlName="password" [(ngModel)]="password"><br/>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
